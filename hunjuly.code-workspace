@@ -1,0 +1,64 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "extensions": {
+        "recommendations": [
+            "vscode-icons-team.vscode-icons",
+            "dbaeumer.vscode-eslint",
+            "ms-azuretools.vscode-docker",
+            "esbenp.prettier-vscode",
+            "firsttris.vscode-jest-runner",
+            "foxundermoon.shell-format"
+        ]
+    },
+    "settings": {
+        "files.watcherExclude": {
+            "**/.git/objects/**": true,
+            "**/.git/subtree-cache/**": true,
+            "**/node_modules/**": true
+        },
+        "search.exclude": {
+            "**/node_modules": true,
+            "**/bower_components": true,
+            "**/output": true,
+            "**/.next": true,
+        },
+        "files.exclude": {
+            "node_modules": true,
+            "package-lock.json": true,
+            "src/react-app-env.d.ts": true
+        },
+        "typescript.format.enable": false,
+        "javascript.format.enable": false,
+        "typescript.tsc.autoDetect": "off",
+        "remote.downloadExtensionsLocally": true,
+        "workbench.iconTheme": "vscode-icons",
+        "typescript.disableAutomaticTypeAcquisition": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[typescriptreact]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[html]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "vscode.json-language-features"
+        },
+        "[shellscript]": {
+            "editor.defaultFormatter": "foxundermoon.shell-format"
+        },
+        "[ignore]": {
+            "editor.defaultFormatter": "foxundermoon.shell-format"
+        },
+        "[dotenv]": {
+            "editor.defaultFormatter": "foxundermoon.shell-format"
+        },
+        "jestrunner.codeLensSelector": "**/{*.test,*.spec,test,spec,__tests__/*}.{js,jsx,ts,tsx}"
+    }
+}
