@@ -2,6 +2,7 @@
     "expo": {
         "name": "react-native-ex",
         "slug": "react-native-ex",
+        "scheme": "app-name",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
         "userInterfaceStyle": "light",
