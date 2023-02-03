@@ -1,6 +1,6 @@
 import React from 'react'
 import { TextStyle } from 'react-native'
-import { useColors } from '@/theme'
+import { useColors } from './useColors'
 
 export function useStepStyles() {
     const C = useColors()

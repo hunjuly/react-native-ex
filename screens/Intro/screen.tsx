@@ -9,9 +9,9 @@ import { OtherPage } from './OtherPage'
 import { Props, useModel } from './model'
 import { useStyles, useTexts } from './resource'
 
-const image1 = require('@/assets/images/intro/page1.png')
-const image2 = require('@/assets/images/intro/page2.png')
-const image3 = require('@/assets/images/intro/page3.png')
+const image1 = require('@/assets/intro/page1.png')
+const image2 = require('@/assets/intro/page2.png')
+const image3 = require('@/assets/intro/page3.png')
 
 export function Intro(P: Props) {
     const S = useStyles()
