@@ -16,6 +16,7 @@ export type RootStackParams = {
     Main: undefined
     NotFound: undefined
     MainNavigator: NavigatorScreenParams<RootTabParams> | undefined
+    Intro: undefined
     AccountLocked: { args: 'abcd' }
 }
 

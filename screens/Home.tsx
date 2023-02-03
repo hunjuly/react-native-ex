@@ -8,7 +8,7 @@ export default function Home({ route }: MainNavigatorProps) {
     return (
         <View style={styles.container}>
             <StatusBar style={'dark'} />
-            <Text.Title1 style={styles.title}>{route.name} Home Page.</Text.Title1>
+            <Text.H1 style={styles.title}>{route.name} Home Page.</Text.H1>
         </View>
     )
 }

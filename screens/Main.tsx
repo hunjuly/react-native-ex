@@ -1,12 +1,12 @@
 import React from 'react'
 import { AppState } from 'react-native'
 import { View } from 'react-native'
-// import { RequestContext } from '@/hooks'
+import { RequestContext } from '@/hooks'
 import { RootStackScreenProps } from '@/navigation/types'
 
 export default function Main({ navigation }: RootStackScreenProps<'Main'>) {
     const appState = React.useRef(AppState.currentState)
-    // const request = React.useContext(RequestContext)
+    const request = React.useContext(RequestContext)
 
     React.useEffect(() => {
         console.log('App Started.')
@@ -28,15 +28,11 @@ export default function Main({ navigation }: RootStackScreenProps<'Main'>) {
     }, [])
 
     React.useEffect(() => {
-        // if (request.isLoggedIn) {
-        navigation.navigate('MainNavigator', { screen: 'Home' })
-
-        //     if (handshake.referralCodeRequired) {
-        //         navigation.navigate('SignupStep4')
-        //     }
-        // } else {
-        //     navigation.navigate('Intro')
-        // }
+        if (request.isLoggedIn) {
+            navigation.navigate('MainNavigator', { screen: 'Home' })
+        } else {
+            navigation.navigate('Intro')
+        }
     }, [])
 
     return <View style={{ flex: 1 }}></View>

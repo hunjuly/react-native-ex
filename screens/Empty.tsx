@@ -8,7 +8,7 @@ export default function EmptyScreen({ route }: MainNavigatorProps) {
     return (
         <View style={styles.container}>
             <StatusBar style={'dark'} />
-            <Text.Title1 style={styles.title}>{route.name} Empty Page.</Text.Title1>
+            <Text.H1 style={styles.title}>{route.name} Empty Page.</Text.H1>
         </View>
     )
 }
