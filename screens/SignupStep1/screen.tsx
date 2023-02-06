@@ -2,17 +2,14 @@ import React from 'react'
 import { View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import {
-    Button,
     CheckBox,
     EmailField,
     KeyboardAnimateView,
     KeyboardAnimated,
     NavigationTitleBar,
-    SafeAreaView,
-    Text
+    SafeAreaView
 } from '@/components'
-import { useStepStyles } from '@/components/styles'
-import { RootStackScreenProps } from '@/navigation/types'
+import { Button, Text, useStepStyles } from '@/theme'
 import { Props, useModel } from './model'
 import { useStyles, useTexts } from './resource'
 
@@ -29,7 +26,7 @@ export function SignupStep1(P: Props) {
                 <View style={Step.headerBox}>
                     <NavigationTitleBar onBackButton={M.goBack} title={T.title} />
                     <View style={Step.stepBox}>
-                        <Text.Subtext style={Step.stepText} value={T.stepOf} />
+                        <Text.Body1 style={Step.stepText} value={T.stepOf} />
                         <View style={Step.stepBarBox}>
                             <View style={Step.activeBar} />
                             <View style={Step.deactiveBar} />
@@ -52,7 +49,7 @@ export function SignupStep1(P: Props) {
                         enableCorrectMark={true}
                         onChange={M.onEmailChanged}
                     />
-                    <Text.Caption style={S.invalidEmail} value={M.emailAlerted && T.invalidEmail} />
+                    <Text.Body1 style={S.invalidEmail} value={M.emailAlerted && T.invalidEmail} />
                     <CheckBox
                         onChange={M.setPolicyAgreement}
                         checked={M.policyAgreement}

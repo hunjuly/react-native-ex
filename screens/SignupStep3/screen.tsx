@@ -2,17 +2,15 @@ import React from 'react'
 import { View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import {
-    Button,
     KeyboardAnimateView,
     KeyboardAnimated,
     NavigationTitleBar,
     PasswordField,
     SafeAreaView,
     StatusChip,
-    StatusChipValueType,
-    Text
+    StatusChipValueType
 } from '@/components'
-import { useStepStyles } from '@/components/styles'
+import { Button, Text, useStepStyles } from '@/theme'
 import { Props, useModel } from './model'
 import { useStyles, useTexts } from './resource'
 
@@ -41,7 +39,7 @@ export function SignupStep3(P: Props) {
                 <View style={Step.headerBox}>
                     <NavigationTitleBar onBackButton={M.goBack} title={T.title} />
                     <View style={Step.stepBox}>
-                        <Text.Subtext style={Step.stepText} value={T.stepOf} />
+                        <Text.Body1 style={Step.stepText} value={T.stepOf} />
                         <View style={Step.stepBarBox}>
                             <View style={Step.activeBar} />
                             <View style={Step.activeBar} />
@@ -69,7 +67,7 @@ export function SignupStep3(P: Props) {
                             invalid={M.invalidPassword}
                             onChange={M.onPassword2Changed}
                         />
-                        <Text.Caption
+                        <Text.Body1
                             style={S.invalidPassword}
                             value={M.invalidPassword && T.invalidPassword}
                         />

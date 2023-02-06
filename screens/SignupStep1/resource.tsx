@@ -1,8 +1,7 @@
 import React from 'react'
 import { TextStyle } from 'react-native'
 import { Callback } from '@/common'
-import { Text } from '@/components'
-import { useColors, useLocalization } from '@/theme'
+import { Text, useColors, useLocalization } from '@/theme'
 
 export function useStyles() {
     const C = useColors()
@@ -72,7 +71,7 @@ export function useTexts() {
     const localized = useLocalization(texts)
 
     const makeLink = (onPress: Callback) => (
-        <Text.Link style={S.policyLink} value={localized.growPolicy} onPress={onPress} />
+        <Text.Body1 style={S.policyLink} value={localized.growPolicy} onPress={onPress} />
     )
 
     const policyAgreement = useLocalization({

@@ -1,8 +1,8 @@
 import React from 'react'
 import { View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
-import { NavigationTitleBar, SafeAreaView, Text, VerifyEmailCode } from '@/components'
-import { useStepStyles } from '@/components/styles'
+import { NavigationTitleBar, SafeAreaView, VerifyEmailCode } from '@/components'
+import { Text, useStepStyles } from '@/theme'
 import { Props, useModel } from './model'
 import { useTexts } from './resource'
 
@@ -18,7 +18,7 @@ export function SignupStep2(P: Props) {
                 <View style={Step.headerBox}>
                     <NavigationTitleBar onBackButton={M.goBack} title={T.title} />
                     <View style={Step.stepBox}>
-                        <Text.Subtext style={Step.stepText} value={T.stepOf} />
+                        <Text.Body1 style={Step.stepText} value={T.stepOf} />
                         <View style={Step.stepBarBox}>
                             <View style={Step.activeBar} />
                             <View style={Step.activeBar} />

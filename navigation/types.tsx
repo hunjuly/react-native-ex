@@ -17,7 +17,9 @@ export type RootStackParams = {
     NotFound: undefined
     MainNavigator: NavigatorScreenParams<RootTabParams> | undefined
     Intro: undefined
-    AccountLocked: { args: 'abcd' }
+    SignupStep1: undefined
+    SignupStep2: { email: string; marketingAgreement: boolean }
+    SignupStep3: { email: string; marketingAgreement: boolean }
 }
 
 export type RootStackScreenProps<Screen extends keyof RootStackParams> = NativeStackScreenProps<

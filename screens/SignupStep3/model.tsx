@@ -1,6 +1,5 @@
 import React from 'react'
 import { TextInput } from 'react-native'
-import { useSignup } from '@/apis'
 import { RequestContext } from '@/hooks'
 import { RootStackScreenProps } from '@/navigation/types'
 
@@ -8,10 +7,9 @@ export type Props = RootStackScreenProps<'SignupStep3'>
 
 export function useModel(P: Props) {
     const { navigation, route } = P
-    const { email, authId, marketingAgreement } = route.params
+    const { email, marketingAgreement } = route.params
 
     const request = React.useContext(RequestContext)
-    const signup = useSignup(request)
 
     const [password1, setPassword1] = React.useState(__DEV__ ? 'aA0000!1' : '')
     const password1Ref = React.createRef<TextInput>()
@@ -47,7 +45,7 @@ export function useModel(P: Props) {
     const doContinue = async () => {
         try {
             if (password1 === password2) {
-                await signup(email, password1, marketingAgreement, authId)
+                navigation.navigate('MainNavigator')
             }
         } catch (error) {
             alert(error)
