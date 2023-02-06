@@ -3,6 +3,7 @@ import { View } from 'react-native'
 import { useWindowDimensions } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import { PageIndicator, PageRange, PageScrollView, SafeAreaBottom } from '@/components'
+import { Button } from '@/theme'
 import { FirstPage } from './FirstPage'
 import { LookAround } from './LookAround'
 import { OtherPage } from './OtherPage'
@@ -42,6 +43,7 @@ export function Intro(P: Props) {
             </PageScrollView>
             <PageIndicator style={{ marginBottom: 16 }} range={range} />
             <LookAround range={range} onPress={M.showLookAround} />
+            <Button.PrimaryL style={S.main.button} onPress={M.onLogin} title={T.login} />
             <SafeAreaBottom />
         </View>
     )

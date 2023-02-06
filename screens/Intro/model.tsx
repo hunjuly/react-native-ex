@@ -9,6 +9,7 @@ export function useModel(P: Props) {
     const [isFocused, setFocused] = React.useState(navigation.isFocused())
 
     const showLookAround = () => alert('look around')
+    const onLogin = () => alert('login')
 
     React.useEffect(() => {
         const unsubscribe = navigation.addListener('state', () => {
@@ -20,6 +21,7 @@ export function useModel(P: Props) {
 
     return {
         isFocused,
-        showLookAround
+        showLookAround,
+        onLogin
     }
 }

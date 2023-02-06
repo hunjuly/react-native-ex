@@ -6,6 +6,7 @@
 import * as React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { ToastView } from '@/components'
 import Intro from '@/screens/Intro'
 import Main from '@/screens/Main'
 import LinkingConfiguration from './LinkingConfiguration'
@@ -16,7 +17,7 @@ export default function Navigation() {
     return (
         <NavigationContainer linking={LinkingConfiguration}>
             <Screens />
-            {/* <ToastView /> */}
+            <ToastView />
         </NavigationContainer>
     )
 }

@@ -24,9 +24,9 @@ export function useStyles() {
                     paddingHorizontal: 21
                 },
                 button: {
-                    flex: 1,
-                    height: 50,
-                    marginHorizontal: 4
+                    height: 40,
+                    width: 150,
+                    marginVertical: 20
                 },
                 scrollView: {
                     position: 'absolute'
@@ -112,25 +112,24 @@ export function useStyles() {
 export const texts = {
     en: {
         first: {
-            title: `Welcome,\nFind out what you can do with Grow.`
+            title: `Welcome,\nReact Natvie & Expo`
         },
         page1: {
-            title: 'Manage your assets on the GROW App',
-            subtitle: 'GROW MAKES CRYPTO SIMPLE',
-            desc: 'Check all various crypto assets as well as the yield status of your subscribed products.'
+            title: 'Page1',
+            subtitle: 'Page1 Subtitle',
+            desc: 'Page1 Desc'
         },
         page2: {
-            title: 'Get compounding yield  6 times a day',
-            subtitle: 'GROW MAKES CRYPTO FASTER',
-            desc: 'When you use Auto Staking, rewards are claimed and restaked automatically to conveniently compound your rewards.'
+            title: 'Page2',
+            subtitle: 'Page2 Subtitle',
+            desc: 'Page2 Desc'
         },
         page3: {
-            title: 'Product customization creates convenience',
-            subtitle: 'GROW MAKES CRYPTO CONVENIENT',
-            desc: 'Find products that users can freely set, such as deposit period and amount!'
+            title: 'Page3',
+            subtitle: 'Page3 Subtitle',
+            desc: 'Page3 Desc'
         },
         login: 'Log in',
-        signup: 'Sign up',
         lookAround: 'LOOK AROUND'
     }
 }
