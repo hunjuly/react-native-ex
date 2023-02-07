@@ -33,7 +33,7 @@ export function useStyles(style: StyleProp<ViewStyle>) {
                 color: 'transparent'
             },
             paste: {
-                marginTop: 14
+                marginTop: 1
             }
         }),
         [C]

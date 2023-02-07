@@ -1,8 +1,9 @@
 import React from 'react'
 import { View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
-import { NavigationTitleBar, SafeAreaView, VerifyEmailCode } from '@/components'
+import { NavigationTitleBar, SafeAreaView } from '@/components'
 import { Text, useStepStyles } from '@/theme'
+import { VerifyEmailCode } from '@/views'
 import { Props, useModel } from './model'
 import { useTexts } from './resource'
 

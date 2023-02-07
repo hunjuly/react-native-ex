@@ -1,7 +1,7 @@
 import React from 'react'
+import { KeyboardAnimateView, KeyboardAnimated } from '@/components'
 import { Button, Text } from '@/theme'
 import { AuthCode } from '../AuthCode'
-import { KeyboardAnimateView, KeyboardAnimated } from '../KeyboardAnimateView'
 import { Props, useModel } from './model'
 import { useStyles, useTexts } from './resource'
 
