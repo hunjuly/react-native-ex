@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native'
-import { useColors } from '@/theme'
 import { Text, TextProps } from './Text'
+import { useColors } from './useColors'
 
 type ButtonColorProps = {
     borderColor?: string

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, TextStyle, TouchableWithoutFeedback, View } from 'react-native'
-import { Text } from './Text'
+import { Text } from '@/theme'
 
 type CheckBoxProps = {
     onChange: (checked: boolean) => void
@@ -9,8 +9,8 @@ type CheckBoxProps = {
     text: string | JSX.Element
 } & View['props']
 
-const checkImage = require('@/assets/images/components/checkbox/check.png')
-const uncheckImage = require('@/assets/images/components/checkbox/uncheck.png')
+const checkImage = require('@/assets/checkbox/check.png')
+const uncheckImage = require('@/assets/checkbox/uncheck.png')
 
 export function CheckBox({ testID, onChange, checked, style, textStyle, text }: CheckBoxProps) {
     // checkImage, uncheckImage의 값은 그냥 1이다.

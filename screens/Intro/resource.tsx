@@ -129,7 +129,7 @@ export const texts = {
             subtitle: 'Page3 Subtitle',
             desc: 'Page3 Desc'
         },
-        login: 'Log in',
+        signup: 'Sign Up',
         lookAround: 'LOOK AROUND'
     }
 }

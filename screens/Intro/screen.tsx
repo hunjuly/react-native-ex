@@ -43,7 +43,7 @@ export function Intro(P: Props) {
             </PageScrollView>
             <PageIndicator style={{ marginBottom: 16 }} range={range} />
             <LookAround range={range} onPress={M.showLookAround} />
-            <Button.PrimaryL style={S.main.button} onPress={M.onLogin} title={T.login} />
+            <Button.PrimaryL style={S.main.button} onPress={M.onSignup} title={T.signup} />
             <SafeAreaBottom />
         </View>
     )

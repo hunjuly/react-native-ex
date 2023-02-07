@@ -1,7 +1,6 @@
 import React from 'react'
 import { TextStyle, View } from 'react-native'
-import { useColors } from '@/theme'
-import { Text } from '../Text'
+import { Text, useColors } from '@/theme'
 
 type Props = { text: String; index: number; isError: boolean }
 

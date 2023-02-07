@@ -102,7 +102,7 @@ export type EmailValue = {
     correct: boolean
 }
 
-const warningImage = require('@/assets/images/components/text/text-warning.png')
+const warningImage = require('@/assets/textfield/text-warning.png')
 
 export function CheckTextField({ forwardedRef, ...P }: Props & { forwardedRef?: React.Ref<TextInput> }) {
     const [normalIcon, setNormalIcon] = React.useState<any>(undefined)
@@ -126,7 +126,7 @@ export function CheckTextField({ forwardedRef, ...P }: Props & { forwardedRef?: 
     )
 }
 
-const correctImage = require('@/assets/images/components/text/text-correct.png')
+const correctImage = require('@/assets/textfield/text-correct.png')
 
 export function EmailField({ forwardedRef, ...P }: Props & { forwardedRef?: React.Ref<TextInput> }) {
     const [normalIcon, setNormalIcon] = React.useState<any>(undefined)
@@ -156,8 +156,8 @@ export function EmailField({ forwardedRef, ...P }: Props & { forwardedRef?: Reac
     )
 }
 
-const showPasswordImage = require('@/assets/images/components/text/password-show.png')
-const hidePasswordImage = require('@/assets/images/components/text/password-hide.png')
+const showPasswordImage = require('@/assets/textfield/password-show.png')
+const hidePasswordImage = require('@/assets/textfield/password-hide.png')
 
 export function PasswordField({ forwardedRef, ...P }: Props & { forwardedRef?: React.Ref<TextInput> }) {
     const [focusIcon, setFocusIcon] = React.useState(hidePasswordImage)

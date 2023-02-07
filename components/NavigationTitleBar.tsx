@@ -1,8 +1,6 @@
 import React from 'react'
 import { View } from 'react-native'
-import { useColors } from '@/theme'
-import { Button } from './Button'
-import { Text } from './Text'
+import { Button, Text, useColors } from '@/theme'
 
 type Props = {
     onBackButton?: () => void
@@ -12,8 +10,8 @@ type Props = {
 } & View['props']
 
 const images = {
-    back: require('@/assets/images/signup/back.png'),
-    close: require('@/assets/images/components/alert/close.png')
+    back: require('@/assets/titlebar/back.png'),
+    close: require('@/assets/titlebar/close.png')
 }
 
 export function NavigationTitleBar({ onBackButton, title, right, type }: Props) {
@@ -33,7 +31,7 @@ export function NavigationTitleBar({ onBackButton, title, right, type }: Props) 
                     alignItems: 'center'
                 }}
             >
-                <Text.H3
+                <Text.H2
                     style={{
                         color: C.elements5,
                         textAlign: 'center',

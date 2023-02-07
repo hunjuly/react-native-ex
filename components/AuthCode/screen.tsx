@@ -1,7 +1,6 @@
 import React from 'react'
 import { TextInput, View } from 'react-native'
-import { Button } from '../Button'
-import { Text } from '../Text'
+import { Button, Text } from '@/theme'
 import { DigitBox } from './DigitBox'
 import { Props, useModel } from './model'
 import { useStyles, useTexts } from './resource'
@@ -36,7 +35,7 @@ export function AuthCode(P: Props) {
                     value={M.text}
                 />
             </View>
-            <Text.Caption style={S.caption} value={isError && T.caption} />
+            <Text.Body1 style={S.caption} value={isError && T.caption} />
             <Button.TextS title="Paste" onPress={M.paste} style={S.paste} />
         </View>
     )
