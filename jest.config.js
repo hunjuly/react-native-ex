@@ -3,7 +3,6 @@ module.exports = async () => {
         preset: 'jest-expo',
         setupFiles: ['<rootDir>/jest.setup.ts'],
         setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect'],
-        // jest-transformer-svg 안 쓴다
         transform: {
             '^.+\\.svg$': 'jest-transformer-svg'
         },

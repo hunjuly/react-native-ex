@@ -1,0 +1,1069 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GoogleOtp screen all true states  1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <RCTSafeAreaView
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 44,
+              "width": "100%",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#020725",
+                },
+                Object {
+                  "fontFamily": "Roboto-Regular",
+                  "fontSize": 28,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                  "lineHeight": 32.8,
+                },
+                Object {
+                  "color": "#000000",
+                  "flex": 1,
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Sign up
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": "100%",
+                "position": "absolute",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 30,
+            "marginHorizontal": 22,
+            "marginTop": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#020725",
+              },
+              Object {
+                "fontFamily": "Roboto-Regular",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.5,
+                "lineHeight": 20,
+              },
+              Object {
+                "color": "#04285A",
+              },
+            ]
+          }
+        >
+          STEP 1 OF 4
+        </Text>
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "height": 4,
+              "marginHorizontal": 0,
+              "marginTop": 8,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#04285A",
+                "flex": 1,
+                "height": 4,
+                "marginHorizontal": 2,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#EAEEF3",
+                "flex": 1,
+                "height": 4,
+                "marginHorizontal": 2,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#EAEEF3",
+                "flex": 1,
+                "height": 4,
+                "marginHorizontal": 2,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#EAEEF3",
+                "flex": 1,
+                "height": 4,
+                "marginHorizontal": 2,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <RCTScrollView
+        keyboardDismissMode="interactive"
+        keyboardShouldPersistTaps="handled"
+        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
+        style={
+          Object {
+            "marginHorizontal": 22,
+          }
+        }
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#020725",
+                  },
+                  Object {
+                    "fontFamily": "Roboto-Bold",
+                    "fontSize": 32,
+                    "fontWeight": "700",
+                    "letterSpacing": 0.25,
+                    "lineHeight": 37.5,
+                  },
+                  Object {
+                    "color": "#000000",
+                    "marginTop": 32,
+                  },
+                ]
+              }
+            >
+              What is your email address?
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#020725",
+                  },
+                  Object {
+                    "fontFamily": "Roboto-Regular",
+                    "fontSize": 16,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.5,
+                    "lineHeight": 20,
+                  },
+                  Object {
+                    "color": "#59554C",
+                    "marginTop": 6,
+                  },
+                ]
+              }
+            >
+              You’ll use this email to log in.
+            </Text>
+            <View
+              style={
+                Array [
+                  Object {
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "marginTop": 17,
+                  },
+                ]
+              }
+            >
+              <TextInput
+                autoCapitalize="none"
+                autoCorrect={false}
+                defaultValue=""
+                keyboardType="email-address"
+                onEndEditing={[Function]}
+                onFocus={[Function]}
+                placeholder="example_email@address.com"
+                placeholderTextColor="#ACACAC"
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#F3F3F4",
+                      "borderBottomColor": "#04285A",
+                      "borderBottomWidth": 2,
+                      "borderTopLeftRadius": 4,
+                      "borderTopRightRadius": 4,
+                      "color": "#59554C",
+                      "fontFamily": "Roboto-Regular",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                      "height": 48,
+                      "letterSpacing": 0.5,
+                      "lineHeight": 20,
+                      "paddingHorizontal": 14,
+                    },
+                  ]
+                }
+              />
+              <Image
+                accessible={true}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                source={1}
+                style={
+                  Object {
+                    "position": "absolute",
+                    "right": 8,
+                  }
+                }
+              />
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "fontFamily": "Roboto-Regular",
+                    "fontSize": 16,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.5,
+                    "lineHeight": 20,
+                  },
+                  Object {
+                    "color": "#CA433C",
+                    "textAlign": "right",
+                  },
+                ]
+              }
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Image
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                source={1}
+                style={
+                  Object {
+                    "marginLeft": 12,
+                    "marginRight": 14,
+                    "marginTop": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              />
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Roboto-Regular",
+                        "fontSize": 15,
+                        "fontWeight": "400",
+                        "letterSpacing": 0.25,
+                        "lineHeight": 20,
+                      },
+                      Object {
+                        "color": "#59554C",
+                      },
+                    ]
+                  }
+                >
+                  By submitting your email, you confirm you’ve read the 
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#020725",
+                        },
+                        Object {
+                          "fontFamily": "Roboto-Regular",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "letterSpacing": 0.5,
+                          "lineHeight": 20,
+                        },
+                        Object {
+                          "color": "#063576",
+                        },
+                      ]
+                    }
+                  >
+                    GROW Policy
+                  </Text>
+                  .
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                  Object {
+                    "marginTop": 17,
+                  },
+                ]
+              }
+            >
+              <Image
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                source={1}
+                style={
+                  Object {
+                    "marginLeft": 12,
+                    "marginRight": 14,
+                    "marginTop": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="marketingAgreement"
+              />
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Roboto-Regular",
+                        "fontSize": 15,
+                        "fontWeight": "400",
+                        "letterSpacing": 0.25,
+                        "lineHeight": 20,
+                      },
+                      Object {
+                        "color": "#59554C",
+                      },
+                    ]
+                  }
+                >
+                  I would like to receive marketing information (optional).
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            collapsable={false}
+            style={
+              Object {
+                "marginTop": 0,
+              }
+            }
+          >
+            <View
+              onLayout={[Function]}
+            >
+              <View>
+                <View
+                  accessibilityState={
+                    Object {
+                      "disabled": true,
+                    }
+                  }
+                  accessible={true}
+                  focusable={false}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "borderStyle": "solid",
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#EDEDED",
+                        "textColor": "#ACACAC",
+                      },
+                      Object {
+                        "alignSelf": "stretch",
+                        "height": 50,
+                        "marginBottom": 26,
+                        "marginHorizontal": 2,
+                        "marginTop": 13,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "Roboto-Medium",
+                          "fontSize": 18,
+                          "fontWeight": "500",
+                          "letterSpacing": 0.18,
+                          "lineHeight": 30,
+                        },
+                        Object {
+                          "color": "#ACACAC",
+                        },
+                      ]
+                    }
+                  >
+                    Continue
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </RCTSafeAreaView>
+</View>
+`;
+
+exports[`GoogleOtp screen default states 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <RCTSafeAreaView
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": 44,
+              "width": "100%",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#020725",
+                },
+                Object {
+                  "fontFamily": "Roboto-Regular",
+                  "fontSize": 28,
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                  "lineHeight": 32.8,
+                },
+                Object {
+                  "color": "#000000",
+                  "flex": 1,
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Sign up
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": "100%",
+                "position": "absolute",
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 30,
+            "marginHorizontal": 22,
+            "marginTop": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#020725",
+              },
+              Object {
+                "fontFamily": "Roboto-Regular",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "letterSpacing": 0.5,
+                "lineHeight": 20,
+              },
+              Object {
+                "color": "#04285A",
+              },
+            ]
+          }
+        >
+          STEP 1 OF 4
+        </Text>
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "height": 4,
+              "marginHorizontal": 0,
+              "marginTop": 8,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#04285A",
+                "flex": 1,
+                "height": 4,
+                "marginHorizontal": 2,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#EAEEF3",
+                "flex": 1,
+                "height": 4,
+                "marginHorizontal": 2,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#EAEEF3",
+                "flex": 1,
+                "height": 4,
+                "marginHorizontal": 2,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#EAEEF3",
+                "flex": 1,
+                "height": 4,
+                "marginHorizontal": 2,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <RCTScrollView
+        keyboardDismissMode="interactive"
+        keyboardShouldPersistTaps="handled"
+        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
+        style={
+          Object {
+            "marginHorizontal": 22,
+          }
+        }
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#020725",
+                  },
+                  Object {
+                    "fontFamily": "Roboto-Bold",
+                    "fontSize": 32,
+                    "fontWeight": "700",
+                    "letterSpacing": 0.25,
+                    "lineHeight": 37.5,
+                  },
+                  Object {
+                    "color": "#000000",
+                    "marginTop": 32,
+                  },
+                ]
+              }
+            >
+              What is your email address?
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#020725",
+                  },
+                  Object {
+                    "fontFamily": "Roboto-Regular",
+                    "fontSize": 16,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.5,
+                    "lineHeight": 20,
+                  },
+                  Object {
+                    "color": "#59554C",
+                    "marginTop": 6,
+                  },
+                ]
+              }
+            >
+              You’ll use this email to log in.
+            </Text>
+            <View
+              style={
+                Array [
+                  Object {
+                    "justifyContent": "center",
+                  },
+                  Object {
+                    "marginTop": 17,
+                  },
+                ]
+              }
+            >
+              <TextInput
+                autoCapitalize="none"
+                autoCorrect={false}
+                defaultValue=""
+                keyboardType="email-address"
+                onEndEditing={[Function]}
+                onFocus={[Function]}
+                placeholder="example_email@address.com"
+                placeholderTextColor="#ACACAC"
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#F3F3F4",
+                      "borderBottomColor": "#04285A",
+                      "borderBottomWidth": 2,
+                      "borderTopLeftRadius": 4,
+                      "borderTopRightRadius": 4,
+                      "color": "#59554C",
+                      "fontFamily": "Roboto-Regular",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                      "height": 48,
+                      "letterSpacing": 0.5,
+                      "lineHeight": 20,
+                      "paddingHorizontal": 14,
+                    },
+                  ]
+                }
+              />
+              <Image
+                accessible={true}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                source={1}
+                style={
+                  Object {
+                    "position": "absolute",
+                    "right": 8,
+                  }
+                }
+              />
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "fontFamily": "Roboto-Regular",
+                    "fontSize": 16,
+                    "fontWeight": "400",
+                    "letterSpacing": 0.5,
+                    "lineHeight": 20,
+                  },
+                  Object {
+                    "color": "#CA433C",
+                    "textAlign": "right",
+                  },
+                ]
+              }
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <Image
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                source={1}
+                style={
+                  Object {
+                    "marginLeft": 12,
+                    "marginRight": 14,
+                    "marginTop": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              />
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Roboto-Regular",
+                        "fontSize": 15,
+                        "fontWeight": "400",
+                        "letterSpacing": 0.25,
+                        "lineHeight": 20,
+                      },
+                      Object {
+                        "color": "#59554C",
+                      },
+                    ]
+                  }
+                >
+                  By submitting your email, you confirm you’ve read the 
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#020725",
+                        },
+                        Object {
+                          "fontFamily": "Roboto-Regular",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                          "letterSpacing": 0.5,
+                          "lineHeight": 20,
+                        },
+                        Object {
+                          "color": "#063576",
+                        },
+                      ]
+                    }
+                  >
+                    GROW Policy
+                  </Text>
+                  .
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexDirection": "row",
+                  },
+                  Object {
+                    "marginTop": 17,
+                  },
+                ]
+              }
+            >
+              <Image
+                accessible={true}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                source={1}
+                style={
+                  Object {
+                    "marginLeft": 12,
+                    "marginRight": 14,
+                    "marginTop": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="marketingAgreement"
+              />
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Roboto-Regular",
+                        "fontSize": 15,
+                        "fontWeight": "400",
+                        "letterSpacing": 0.25,
+                        "lineHeight": 20,
+                      },
+                      Object {
+                        "color": "#59554C",
+                      },
+                    ]
+                  }
+                >
+                  I would like to receive marketing information (optional).
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            collapsable={false}
+            style={
+              Object {
+                "marginTop": 0,
+              }
+            }
+          >
+            <View
+              onLayout={[Function]}
+            >
+              <View>
+                <View
+                  accessibilityState={
+                    Object {
+                      "disabled": true,
+                    }
+                  }
+                  accessible={true}
+                  focusable={false}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "borderRadius": 10,
+                        "borderStyle": "solid",
+                        "justifyContent": "center",
+                      },
+                      Object {
+                        "backgroundColor": "#EDEDED",
+                        "textColor": "#ACACAC",
+                      },
+                      Object {
+                        "alignSelf": "stretch",
+                        "height": 50,
+                        "marginBottom": 26,
+                        "marginHorizontal": 2,
+                        "marginTop": 13,
+                      },
+                    ]
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "Roboto-Medium",
+                          "fontSize": 18,
+                          "fontWeight": "500",
+                          "letterSpacing": 0.18,
+                          "lineHeight": 30,
+                        },
+                        Object {
+                          "color": "#ACACAC",
+                        },
+                      ]
+                    }
+                  >
+                    Continue
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </RCTSafeAreaView>
+</View>
+`;

@@ -1,7 +1,7 @@
 import React from 'react'
-import { ScrollView } from 'react-native'
-import { SafeContainer } from '@/components'
+import { SafeScrollContainer } from '@/components'
 import { Button } from '@/theme'
+import { ExamplePopup } from './ExamplePopup'
 import { Props, useModel } from './model'
 import { useStyles, useTexts } from './resource'
 
@@ -10,12 +10,18 @@ export function Home(P: Props) {
     const S = useStyles()
     const T = useTexts()
 
+    const [modalVisible, setModalVisible] = React.useState(true)
+
     return (
-        <SafeContainer>
-            <ScrollView showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}>
-                <Button.TextS title="Modal popup" onPress={() => {}} />
-                <Button.TextS title="Modal popup" onPress={() => {}} />
-            </ScrollView>
-        </SafeContainer>
+        <SafeScrollContainer style={S.container}>
+            <ExamplePopup visible={modalVisible} setVisible={setModalVisible} />
+            <Button.TextL
+                title="FadeModal popup"
+                onPress={() => {
+                    setModalVisible(!modalVisible)
+                }}
+            />
+            <Button.TextL title="Modal popup" onPress={() => {}} />
+        </SafeScrollContainer>
     )
 }

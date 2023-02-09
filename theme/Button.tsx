@@ -267,10 +267,17 @@ export class Button {
     }
 
     public static TextS({ onPress, title, style }: TextButtonProps) {
-        // press effect 때문에 <TouchableOpacity> 사용함
         return (
             <TouchableOpacity onPress={onPress}>
                 <Text.ButtonS style={style}>{title}</Text.ButtonS>
+            </TouchableOpacity>
+        )
+    }
+
+    public static TextL({ onPress, title, style }: TextButtonProps) {
+        return (
+            <TouchableOpacity onPress={onPress}>
+                <Text.ButtonL style={style}>{title}</Text.ButtonL>
             </TouchableOpacity>
         )
     }

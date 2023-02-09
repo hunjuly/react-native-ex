@@ -1,30 +1,10 @@
 import React from 'react'
 
-export type ColorsType = {
-    primary: string
-    tint1: string
-    tint2: string
-    tint3: string
-    tint4: string
-    shade1: string
-    shade2: string
-    accent: string
-    background2: string
-    background3: string
-    elements1: string
-    elements2: string
-    elements3: string
-    elements4: string
-    elements5: string
-    elements6: string
-    elements7: string
-    elements8: string
-    elements9: string
-}
-
 export function useColors() {
     const schemes = {
         light: {
+            background: '#FFFFFF',
+            statusbar: 'dark' as const,
             primary: '#004AB1',
             tint1: '#0968ED',
             tint2: 'rgba(0, 74, 177, 0.1)',
