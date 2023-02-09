@@ -4,9 +4,7 @@ import { useColors, useLocalization } from '@/theme'
 export function useStyles() {
     const C = useColors()
 
-    const styles = StyleSheet.create({
-        container: { margin: 20 }
-    })
+    const styles = StyleSheet.create({})
 
     return styles
 }

@@ -4,7 +4,7 @@ import { useColors, useLocalization } from '@/theme'
 
 interface PopupProps {
     visible: boolean
-    setVisible: (value: boolean) => void
+    onClose: () => void
 }
 
 export function ExamplePopup(P: PopupProps) {
@@ -18,9 +18,7 @@ export function ExamplePopup(P: PopupProps) {
             transparent={true}
             statusBarTranslucent={true}
             visible={P.visible}
-            onRequestClose={() => {
-                P.setVisible(!P.visible)
-            }}
+            onRequestClose={P.onClose}
             onShow={() => {
                 console.log('onShow')
             }}
@@ -29,7 +27,7 @@ export function ExamplePopup(P: PopupProps) {
                 <StatusBar style={'light'} />
                 <View style={S.modalView}>
                     <Text style={S.modalText}>Hello World!</Text>
-                    <Pressable style={[S.button, S.buttonClose]} onPress={() => P.setVisible(!P.visible)}>
+                    <Pressable style={[S.button, S.buttonClose]} onPress={P.onClose}>
                         <Text style={S.textStyle}>Hide Modal</Text>
                     </Pressable>
                 </View>
