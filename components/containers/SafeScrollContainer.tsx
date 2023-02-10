@@ -7,6 +7,8 @@ export function SafeScrollContainer(P: View['props']) {
     const { style, children, ...others } = P
     const C = useColors()
 
+    const paddingTop = NativeStatusBar.currentHeight ?? 0
+
     return (
         <View
             style={{
@@ -15,13 +17,7 @@ export function SafeScrollContainer(P: View['props']) {
             }}
         >
             <StatusBar style={C.statusbar} />
-            <NativeSafeView
-                style={{
-                    flex: 1,
-                    paddingTop: NativeStatusBar.currentHeight ?? 0
-                }}
-                {...others}
-            >
+            <NativeSafeView style={{ flex: 1, paddingTop }} {...others}>
                 <ScrollView
                     style={style}
                     showsHorizontalScrollIndicator={false}

@@ -3,6 +3,7 @@ import { View } from 'react-native'
 import { useWindowDimensions } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import { PageIndicator, PageRange, PageScrollView, SafeAreaBottom } from '@/components'
+import { Container } from '@/components'
 import { Button } from '@/theme'
 import { FirstPage } from './FirstPage'
 import { LookAround } from './LookAround'
@@ -27,10 +28,10 @@ export function Intro(P: Props) {
     const statusBarStyle = range.current === 0 ? 'light' : 'dark'
 
     return (
-        <View style={S.main.container}>
+        <Container style={S.container}>
             <StatusBar style={statusBarStyle} />
             <PageScrollView
-                style={S.main.scrollView}
+                style={S.scrollView}
                 pageWidth={screenWidth}
                 range={range}
                 setPageRange={setPageRange}
@@ -41,10 +42,12 @@ export function Intro(P: Props) {
                 <OtherPage text={T.page2} image={image2} />
                 <OtherPage text={T.page3} image={image3} />
             </PageScrollView>
-            <PageIndicator style={{ marginBottom: 16 }} range={range} />
-            <LookAround range={range} onPress={M.showLookAround} />
-            <Button.PrimaryL style={S.main.button} onPress={M.onSignup} title={T.signup} />
+            <View style={{ alignItems: 'center' }}>
+                <PageIndicator style={{ marginBottom: 16 }} range={range} />
+                <LookAround range={range} onPress={M.showLookAround} />
+                <Button.PrimaryL style={S.button} onPress={M.onSignup} title={T.signup} />
+            </View>
             <SafeAreaBottom />
-        </View>
+        </Container>
     )
 }

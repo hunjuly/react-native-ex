@@ -34,7 +34,7 @@ export default function Main({ navigation }: RootStackScreenProps<'Main'>) {
             navigation.navigate('Intro')
         }
 
-        navigation.navigate('MainNavigator', { screen: 'Home' })
+        // navigation.navigate('MainNavigator', { screen: 'Home' })
     }, [])
 
     return <View style={{ flex: 1 }}></View>
